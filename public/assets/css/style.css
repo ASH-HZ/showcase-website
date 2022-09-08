@@ -1,0 +1,225 @@
+@charset "UTF-8";
+
+body {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(204, 205, 207, 0.7);
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.05em;
+    -webkit-font-smoothing: antialiased;
+    background-color: #464866;
+    overflow:hidden;
+}
+
+/***
+TOP BAR
+***/
+.top-bar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.6);
+    z-index: 9;
+    background-color: #25274d;
+    width: 100%;
+    height: 80px;
+}
+
+    .top-bar .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .top-bar .container .tb-left-side {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            width: 50px;
+        }
+
+            .top-bar .container .tb-left-side .logo-frame {
+                display: flex;
+                align-items: center;
+                height: 80px;
+            }
+
+                .top-bar .container .tb-left-side .logo-frame img {
+                    width: 100px;
+                }
+
+        .top-bar .container .tb-right-side {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            width: 70%;
+            justify-content: center;
+        }
+
+/***
+TOPBAR MENU
+***/
+.tb-menu {
+    margin-right: 10px;
+}
+
+    .tb-menu nav ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+        .tb-menu nav ul li {
+            height: 80px;
+            position: relative;
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .tb-menu nav ul li:after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                border-radius: 10px;
+                height: 4px;
+                width: 0;
+                background-color: #aaabb8;
+                transition: 0.4s ease-in-out;
+            }
+
+                .tb-menu nav ul li.current-item:after, .tb-menu nav ul li.current-menu-item:after {
+                    width: 100%;
+                }
+
+            .tb-menu nav ul li a {
+                white-space: nowrap;
+                height: 100%;
+                width: 100%;
+                padding: 0 20px;
+                line-height: 80px;
+                color: #dedee0;
+                text-transform: uppercase;
+                font-size: 11px;
+                letter-spacing: 2px;
+                font-weight: 700;
+                transition: 0.4s ease-in-out;
+                text-decoration: none;
+            }
+
+                .tb-menu nav ul li a:hover {
+                    color: #aaabb8;
+                }
+
+            .tb-menu nav ul li ul {
+                padding: 10px;
+                pointer-events: none;
+                background-color: #00283A;
+                opacity: 0;
+                transform: translateY(20px);
+                height: auto;
+                top: 80px;
+                left: -10px;
+                border-radius: 0 0 10px 10px;
+                box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.6);
+                min-width: 130px;
+                position: absolute;
+                z-index: 9;
+                display: flex;
+                flex-direction: column;
+                transition: 0.4s ease-in-out;
+            }
+
+                .tb-menu nav ul li ul li {
+                    height: 50px;
+                    margin: 0;
+                    justify-content: flex-start;
+                }
+
+                    .tb-menu nav ul li ul li:after, .tb-menu nav ul li ul li:before {
+                        display: none;
+                    }
+
+                    .tb-menu nav ul li ul li a {
+                        line-height: 50px;
+                    }
+
+                    .tb-menu nav ul li:hover ul {
+                        pointer-events: all;
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+
+@media (max-width: 1200px) {
+    .tb-menu {
+        text-align: center;
+        margin: 0;
+        width: 100%;
+    }
+
+        .tb-menu nav {
+            width: 100%;
+        }
+
+            .tb-menu nav ul {
+                margin: 20px 0;
+                flex-direction: column;
+            }
+
+                .tb-menu nav ul li {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                }
+
+                    .tb-menu nav ul li:after {
+                        display: none;
+                    }
+
+                    .tb-menu nav ul li a {
+                        height: 50px;
+                        line-height: 50px;
+                    }
+
+                    .tb-menu nav ul li.menu-item-has-children a {
+                        pointer-events: none;
+                    }
+
+                        .tb-menu nav ul li.menu-item-has-children ul li a {
+                            pointer-events: all;
+                        }
+
+                    .tb-menu nav ul li.current-menu-item a {
+                        color: #AFB42B;
+                    }
+
+                        .tb-menu nav ul li.current-menu-item ul li a {
+                            color: #dedee0;
+                        }
+
+                    .tb-menu nav ul li ul {
+                        border-radius: 0;
+                        margin: 0;
+                        background-color: #02162B;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        padding: 0;
+                        position: relative;
+                        overflow: hidden;
+                        opacity: 1;
+                        transform: none;
+                        margin: 0;
+                        pointer-events: all;
+                        max-height: 0;
+                        box-shadow: inset 0 0 4px -1px rgba(0, 0, 0, 0.6);
+                    }
+
+                    .tb-menu nav ul li:hover ul {
+                        max-height: 300px;
+                    } }
+
+/***
+TOPBAR MENU MOBILE
+***/

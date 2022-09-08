@@ -3,9 +3,6 @@
 @section('page_description', 'Welkom op het portfolio website van Anthony Chan')
 
 @section('content')
-
     <body>
-
-
 
     </body>

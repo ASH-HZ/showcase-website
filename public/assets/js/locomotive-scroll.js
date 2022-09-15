@@ -271,7 +271,7 @@
     gestureDirection: 'vertical',
     reloadOnContextChange: false,
     lerp: 0.1,
-    "class": 'trm-active-el',
+    "class": 'sw-active-el',
     scrollbarContainer: false,
     scrollbarClass: 'c-scrollbar',
     scrollingClass: 'has-scroll-scrolling',
@@ -508,24 +508,24 @@
         //     }
         // }
 
-        if ($('#home-triger').hasClass('trm-active-el')) {
-          $('.trm-menu nav ul li').removeClass('current-item');
+        if ($('#home-triger').hasClass('sw-active-el')) {
+          $('.sw-menu nav ul li').removeClass('current-item');
           $('#home-link').addClass('current-item');
         }
-        if ($('#about-triger').hasClass('trm-active-el')) {
-          $('.trm-menu nav ul li').removeClass('current-item');
+        if ($('#about-triger').hasClass('sw-active-el')) {
+          $('.sw-menu nav ul li').removeClass('current-item');
           $('#about-link').addClass('current-item');
         }
-        if ($('#portfolio-triger').hasClass('trm-active-el')) {
-          $('.trm-menu nav ul li').removeClass('current-item');
+        if ($('#portfolio-triger').hasClass('sw-active-el')) {
+          $('.sw-menu nav ul li').removeClass('current-item');
           $('#portfolio-link').addClass('current-item');
         }
-        if ($('#resume-triger').hasClass('trm-active-el')) {
-          $('.trm-menu nav ul li').removeClass('current-item');
+        if ($('#resume-triger').hasClass('sw-active-el')) {
+          $('.sw-menu nav ul li').removeClass('current-item');
           $('#resume-link').addClass('current-item');
         }
-        if ($('#contact-triger').hasClass('trm-active-el')) {
-          $('.trm-menu nav ul li').removeClass('current-item');
+        if ($('#contact-triger').hasClass('sw-active-el')) {
+          $('.sw-menu nav ul li').removeClass('current-item');
           $('#contact-link').addClass('current-item');
         }
 
@@ -3355,7 +3355,7 @@
         gestureDirection: "vertical",
         reloadOnContextChange: !1,
         lerp: .1,
-        class: "trm-active-el",
+        class: "sw-active-el",
         scrollbarContainer: !1,
         scrollbarClass: "c-scrollbar",
         scrollingClass: "has-scroll-scrolling",

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('page_title', 'Anthony Chan')
-@section('page_description', 'Welkom op de showcase website van Anthony Chan')
+@section('page_description', 'HTML voor beginners blog artikel van de showcase website van Anthony Chan')
 
 @section('content')
 

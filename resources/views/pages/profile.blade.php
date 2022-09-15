@@ -93,17 +93,17 @@
 
                                             <!-- info -->
                                             <ul class="sw-table sw-mb-20">
-                                                <!-- country -->
+                                                <!-- Age -->
                                                 <li>
                                                     <div class="sw-label">Leeftijd:</div>
                                                     <div class="sw-label text-white-50">19</div>
                                                 </li>
-                                                <!-- city -->
+                                                <!-- Residence -->
                                                 <li>
                                                     <div class="sw-label">Woonplaats:</div>
                                                     <div class="sw-label text-white-50">Renesse</div>
                                                 </li>
-                                                <!-- age -->
+                                                <!-- Birth city -->
                                                 <li>
                                                     <div class="sw-label">Geboorteplaats:</div>
                                                     <div class="sw-label text-white-50">Rotterdam</div>
@@ -293,8 +293,9 @@
                                             </div>
                                             <div class="col-lg-6">
 
-                                                <!-- timeline -->
+                                                <!-- timeline left -->
                                                 <div class="sw-timeline">
+                                                    <!-- Timeline item -->
                                                     <div class="sw-timeline-item sw-scroll-animation" data-scroll>
                                                         <div class="sw-timeline-mark"></div>
                                                         <div class="sw-a sw-timeline-content">
@@ -312,7 +313,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-
+                                                    <!-- Timeline item end -->
                                                     <div class="sw-timeline-item sw-scroll-animation" data-scroll>
                                                         <div class="sw-timeline-mark"></div>
                                                         <div class="sw-a sw-timeline-content">
@@ -333,14 +334,16 @@
                                                                 lagen. Daarom ben ik er ook vrij snel mee gestopt.
                                                             </div>
                                                         </div>
-
                                                     </div>
+                                                    <!-- Timeline item end -->
 
                                                 </div>
-                                                <!-- timeline end -->
+                                                <!-- Timeline left end -->
                                             </div>
                                             <div class="col-lg-6">
+                                                <!-- Timeline right -->
                                                 <div class="sw-timeline">
+                                                    <!-- Timeline item -->
                                                     <div class="sw-timeline-item sw-scroll-animation" data-scroll>
                                                         <div class="sw-timeline-mark"></div>
                                                         <div class="sw-a sw-timeline-content">
@@ -360,7 +363,8 @@
                                                             </div>
                                                         </div>
                                                     </div>
-
+                                                    <!-- Timeline item end -->
+                                                    <!-- Timeline item -->
                                                     <div class="sw-timeline-item sw-scroll-animation" data-scroll>
                                                         {{--                                                        <div class="sw-timeline-mark"></div>
                                                                                                                     <div class="sw-a sw-timeline-content">
@@ -375,7 +379,8 @@
                                                                                                                     </div>
                                                                                                                 </div>--}}
                                                     </div>
-
+                                                    <!-- Timeline item end -->
+                                                    <!-- Timeline item -->
                                                     <div class="sw-timeline-item sw-scroll-animation" data-scroll>
                                                         {{--                                                        <div class="sw-timeline-mark"></div>
                                                                                                                     <div class="sw-a sw-timeline-content">
@@ -391,7 +396,7 @@
                                                                                                                 </div>--}}
 
                                                     </div>
-
+                                                    <!-- Timeline item end -->
                                                 </div>
                                             </div>
                                         </div>

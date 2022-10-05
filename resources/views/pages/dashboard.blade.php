@@ -152,6 +152,14 @@
                                                     </tbody>
                                                 </table>
                                                 <!-- Table end -->
+                                                <br><br><br>
+                                                <!-- Study progress -->
+                                                <h5>Studievoortgang</h5>
+                                                <br>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="60"></div>
+                                                </div>
+                                                <!-- Study progress end -->
                                             </div>
                                         </div>
                                         <br><br>
